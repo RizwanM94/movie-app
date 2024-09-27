@@ -23,7 +23,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage }).single('image'); // 'image' is the form field name
 
-// GET ALL MOVIES
+// GET ALL
 exports.getMovies = async (req, res) => {
   try {
     const userId = req.user.id; // Get the user's ID from the request object
